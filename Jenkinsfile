@@ -5,7 +5,8 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/Jyothigandla/3-tier-lambda.git'
+                git branch: 'main',
+                url: 'https://github.com/Jyothigandla/3-tier-lambda.git'
             }
         }
 
